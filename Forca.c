@@ -232,63 +232,63 @@ int caleidoscopiox;
 			if (test1 == 'c'){
 				c = test1;
 				if (c == 'c' && a == 'a' && l == 'l' && e == 'e' && i =='i' && d == 'd' && o == 'o' && s == 's' && p == 'p'){
-					printf("Parabens, acertou!!\nPalavra: Armadura\nTotal de erros: %d", tentativas);
+					printf("--------------------------------\nParabens, acertou!!\nPalavra: caleidoscopio\nTotal de erros: %d", tentativas);
 					exit(0);
 				}else 
 				 jogo (op);	
 			}else if(test1 == 'a'){
 				a = test1;
 				if (c == 'c' && a == 'a' && l == 'l' && e == 'e' && i =='i' && d == 'd' && o == 'o' && s == 's' && p == 'p'){
-					printf("Parabens, acertou!!\nPalavra: Armadura\nTotal de erros: %d", tentativas);
+					printf("--------------------------------\nParabens, acertou!!\nPalavra: caleidoscopio\nTotal de erros: %d", tentativas);
 					exit(0);
 				}else 
 				 jogo (op);	
 			}else if(test1 == 'l'){
 			l = test1;
 					if (c == 'c' && a == 'a' && l == 'l' && e == 'e' && i =='i' && d == 'd' && o == 'o' && s == 's' && p == 'p'){
-					printf("Parabens, acertou!!\nPalavra: Armadura\nTotal de erros: %d", tentativas);
+					printf("--------------------------------\nParabens, acertou!!\nPalavra: caleidoscopio\nTotal de erros: %d", tentativas);
 					exit(0);
 				}else 
 				 jogo (op);	
 			}else if(test1 == 'e'){
 				e = test1;
 				if (c == 'c' && a == 'a' && l == 'l' && e == 'e' && i =='i' && d == 'd' && o == 'o' && s == 's' && p == 'p'){
-					printf("Parabens, acertou!!\nPalavra: Armadura\nTotal de erros: %d", tentativas);
+					printf("--------------------------------\nParabens, acertou!!\nPalavra: caleidoscopio\nTotal de erros: %d", tentativas);
 					exit(0);
 				}else 
 				 jogo (op);
 			}else if(test1 == 'i'){
 				i = test1;
 				if (c == 'c' && a == 'a' && l == 'l' && e == 'e' && i =='i' && d == 'd' && o == 'o' && s == 's' && p == 'p'){
-					printf("Parabens, acertou!!\nPalavra: Armadura\nTotal de erros: %d", tentativas);
+					printf("--------------------------------\nParabens, acertou!!\nPalavra: caleidoscopio\nTotal de erros: %d", tentativas);
 					exit(0);
 				}else 
 					jogo (op);
 			}else if(test1 == 'd'){
 				d = test1;
 				if (c == 'c' && a == 'a' && l == 'l' && e == 'e' && i =='i' && d == 'd' && o == 'o' && s == 's' && p == 'p'){
-					printf("Parabens, acertou!!\nPalavra: Armadura\nTotal de erros: %d", tentativas);
+					printf("--------------------------------\nParabens, acertou!!\nPalavra: caleidoscopio\nTotal de erros: %d", tentativas);
 					exit(0);
 				}else 
 				 jogo (op);	
 			}else if(test1 == 'o'){
 				o = test1;
 				if (c == 'c' && a == 'a' && l == 'l' && e == 'e' && i =='i' && d == 'd' && o == 'o' && s == 's' && p == 'p'){
-					printf("Parabens, acertou!!\nPalavra: Armadura\nTotal de erros: %d", tentativas);
+					printf("--------------------------------\nParabens, acertou!!\nPalavra: caleidoscopio\nTotal de erros: %d", tentativas);
 					exit(0);
 				}else 
 				 jogo (op);	
 			}else if(test1 == 's'){
 				s = test1;
 				if (c == 'c' && a == 'a' && l == 'l' && e == 'e' && i =='i' && d == 'd' && o == 'o' && s == 's' && p == 'p'){
-					printf("Parabens, acertou!!\nPalavra: Armadura\nTotal de erros: %d", tentativas);
+					printf("--------------------------------\nParabens, acertou!!\nPalavra: caleidoscopio\nTotal de erros: %d", tentativas);
 					exit(0);
 				}else 
 				 jogo (op);	
 			}else if(test1 == 'p'){
 				p = test1;
 				if (c == 'c' && a == 'a' && l == 'l' && e == 'e' && i =='i' && d == 'd' && o == 'o' && s == 's' && p == 'p'){
-					printf("Parabens, acertou!!\nPalavra: Armadura\nTotal de erros: %d", tentativas);
+					printf("--------------------------------\nParabens, acertou!!\nPalavra: caleidoscopio\nTotal de erros: %d", tentativas);
 					exit(0);
 				}else 
 				 jogo (op);	
