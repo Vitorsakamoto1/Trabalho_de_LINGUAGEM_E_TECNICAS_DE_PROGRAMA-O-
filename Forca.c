@@ -1,580 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-	int candelabrox;
-	void candelabro (int candelabrox){
-		
-		char c,a,n,d,e,l,b,r,o;
-		int inicio,tentativas,op;
-		char test1;
-		tentativas = 0;
-		c = '_';
-		a = '_';
-		n = '_';
-		d = '_';
-		e = '_';
-		l = '_';
-		b = '_';
-		r = '_';
-		o = '_';
-		
-		
-		printf("...................Jogo da Forca...................\nAcerte a palavra advinhando 1 letra por vez\nLimite de tentativas:10\n");
-		
-		void jogo(int op) {
-			printf("A palavra e : %c %c %c %c %c %c %c %c %c %c  \n", c,a,n,d,e,l,a,b,r,o);
-			printf("Adivinhe uma letra: ");
-			scanf(" %c", &test1);
-			if (test1 == 'c'){
-				c = test1;
-				if (c == 'c' && a == 'a' && n == 'n' && d == 'd' && e =='e' && l == 'l' && b == 'b' && r == 'r' && o == 'o'){
-					printf("Parabens, acertou!!\nPalavra: Candelabro\nTotal de erros: %d", tentativas);
-					exit(0);
-				}else 
-				 jogo (op);	
-			}else if(test1 == 'a'){
-				a = test1;
-				if (c == 'c' && a == 'a' && n == 'n' && d == 'd' && e =='e' && l == 'l' && b == 'b' && r == 'r' && o == 'o'){
-					printf("Parabens, acertou!!\nPalavra: Candelabro\nTotal de erros: %d", tentativas);
-					exit(0);
-				}else 
-				 jogo (op);	
-			}else if(test1 == 'n'){
-		 		n = test1;
-				if (c == 'c' && a == 'a' && n == 'n' && d == 'd' && e =='e' && l == 'l' && b == 'b' && r == 'r' && o == 'o'){
-					printf("Parabens, acertou!!\nPalavra: Candelabro\nTotal de erros: %d", tentativas);
-					exit(0);
-				}else 
-				 jogo (op);	
-			}else if(test1 == 'd'){
-				d = test1;
-				if (c == 'c' && a == 'a' && n == 'n' && d == 'd' && e =='e' && l == 'l' && b == 'b' && r == 'r' && o == 'o'){
-					printf("Parabens, acertou!!\nPalavra: Candelabro\nTotal de erros: %d", tentativas);
-					exit(0);
-				}else 
-				 jogo (op);
-			}else if(test1 == 'e'){
-				e = test1;
-				if (c == 'c' && a == 'a' && n == 'n' && d == 'd' && e =='e' && l == 'l' && b == 'b' && r == 'r' && o == 'o'){
-					printf("Parabens, acertou!!\nPalavra: Candelabro\nTotal de erros: %d", tentativas);
-					exit(0);
-				}else 
-					jogo (op);
-			}else if(test1 == 'l'){
-				l = test1;
-				if (c == 'c' && a == 'a' && n == 'n' && d == 'd' && e =='e' && l == 'l' && b == 'b' && r == 'r' && o == 'o'){
-					printf("Parabens, acertou!!\nPalavra: Candelabro\nTotal de erros: %d", tentativas);
-					exit(0);
-				}else 
-					jogo (op);
-			}else if(test1 == 'b'){
-				b = test1;
-				if (c == 'c' && a == 'a' && n == 'n' && d == 'd' && e =='e' && l == 'l' && b == 'b' && r == 'r' && o == 'o'){
-					printf("Parabens, acertou!!\nPalavra: Candelabro\nTotal de erros: %d", tentativas);
-					exit(0);
-				}else 
-				 jogo (op);	
-			}else if(test1 == 'r'){
-				r = test1;
-				if (c == 'c' && a == 'a' && n == 'n' && d == 'd' && e =='e' && l == 'l' && b == 'b' && r == 'r' && o == 'o'){
-					printf("Parabens, acertou!!\nPalavra: Candelabro\nTotal de erros: %d", tentativas);
-					exit(0);
-				}else 
-				 jogo (op);	
-			}else if(test1 == 'o'){
-				o = test1;
-				if (c == 'c' && a == 'a' && n == 'n' && d == 'd' && e =='e' && l == 'l' && b == 'b' && r == 'r' && o == 'o'){
-					printf("Parabens, acertou!!\nPalavra: Candelabro\nTotal de erros: %d", tentativas);
-					exit(0);
-				}else 
-				 jogo (op);	
-			}else if (tentativas == 10 || tentativas >=10){
-				printf("Mais de 10 tentativas erradas!\n ...................FIM DE JOGO...................");
-				exit(0);
-			}else{
-				tentativas = tentativas + 1;
-				printf("Nao tem a letra, contagem de tentativas erradas: %d \n",tentativas);
-				jogo(op);
-			}
-		}
-			
-		jogo(op);
-	}
-
-int computadorx;
-	void computador(int computadorx){
-		
-		char c,o,m,p,u,t,a,d,r;
-		int inicio,tentativas,op;
-		char test1;
-	    
-		tentativas = 0;
-		c = '_';
-		o = '_';
-		m = '_';
-		p = '_';
-		u = '_';
-		t = '_';
-		a = '_';
-		d = '_';
-		r = '_';
-			
-		printf("...................Jogo da Forca...................\nAcerte a palavra advinhando 1 letra por vez\nLimite de tentativas:10\n");
-		
-		void jogo(int op) {
-			printf("A palavra e : %c %c %c %c %c %c %c %c %c %c \n", c,o,m,p,u,t,a,d,o,r);
-			printf("Adivinhe uma letra: ");
-			scanf(" %c", &test1);
-			if (test1 == 'c'){
-				c = test1;
-				if (c == 'c' && o == 'o' && m == 'm' && p == 'p' && u == 'u' && t == 't' && a == 'a' && d == 'd' && r == 'r'){
-					printf("Parabens, acertou!!\nPalavra: Computador\nTotal de erros: %d", tentativas);
-					exit(0);
-				}else 
-				 jogo (op);	
-			}else if(test1 == 'o'){
-				o = test1;
-				if (c == 'c' && o == 'o' && m == 'm' && p == 'p' && u == 'u' && t == 't' && a == 'a' && d == 'd' && r == 'r'){
-					printf("Parabens, acertou!!\nPalavra: Computador\nTotal de erros: %d", tentativas);
-					exit(0);
-				}else 
-				 jogo (op);	
-			}else if(test1 == 'm'){
-				m = test1;
-				if (c == 'c' && o == 'o' && m == 'm' && p == 'p' && u == 'u' && t == 't' && a == 'a' && d == 'd' && r == 'r'){
-					printf("Parabens, acertou!!\nPalavra: Computador\nTotal de erros: %d", tentativas);
-					exit(0);
-				}else 
-				 jogo (op);	
-			}else if(test1 == 'p'){
-				p = test1;
-				if (c == 'c' && o == 'o' && m == 'm' && p == 'p' && u == 'u' && t == 't' && a == 'a' && d == 'd' && r == 'r'){
-					printf("Parabens, acertou!!\nPalavra: Computador\nTotal de erros: %d", tentativas);
-					exit(0);
-				}else 
-				 jogo (op);	
-			}else if(test1 == 'u'){
-				u = test1;
-				if (c == 'c' && o == 'o' && m == 'm' && p == 'p' && u == 'u' && t == 't' && a == 'a' && d == 'd' && r == 'r'){
-					printf("Parabens, acertou!!\nPalavra: Computador\nTotal de erros: %d", tentativas);
-					exit(0);
-				}else 
-				 jogo (op);	
-			}else if(test1 == 't'){
-				t = test1;
-				if (c == 'c' && o == 'o' && m == 'm' && p == 'p' && u == 'u' && t == 't' && a == 'a' && d == 'd' && r == 'r'){
-					printf("Parabens, acertou!!\nPalavra: Computador\nTotal de erros: %d", tentativas);
-					exit(0);
-				}else 
-				 jogo (op);	
-			}else if(test1 == 'a'){
-				a = test1;
-				if (c == 'c' && o == 'o' && m == 'm' && p == 'p' && u == 'u' && t == 't' && a == 'a' && d == 'd' && r == 'r'){
-					printf("Parabens, acertou!!\nPalavra: Computador\nTotal de erros: %d", tentativas);
-					exit(0);
-				}else 
-				 jogo (op);	
-			}else if(test1 == 'd'){
-				d = test1;
-				if (c == 'c' && o == 'o' && m == 'm' && p == 'p' && u == 'u' && t == 't' && a == 'a' && d == 'd' && r == 'r'){
-					printf("Parabens, acertou!!\nPalavra: Computador\nTotal de erros: %d", tentativas);
-					exit(0);
-				}else 
-				 jogo (op);	
-			}else if(test1 == 'r'){
-				r = test1;
-				if (c == 'c' && o == 'o' && m == 'm' && p == 'p' && u == 'u' && t == 't' && a == 'a' && d == 'd' && r == 'r'){
-					printf("Parabens, acertou!!\nPalavra: Computador\nTotal de erros: %d", tentativas);
-					exit(0);
-				}else 
-					jogo (op);
-			}else if (tentativas == 10 || tentativas >=10){
-				printf("Mais de 10 tentativas erradas!\n ...................FIM DE JOGO...................");
-				exit(0);
-			}else{
-				tentativas = tentativas + 1;
-				printf("Nao tem a letra, contagem de tentativas erradas: %d \n",tentativas);
-				jogo(op);
-			}
-		}
-			
-		jogo(op);
-	}
-
-int caleidoscopiox;
-	void caleidoscopio (int caleidoscopiox){
-		
-		char c,a,l,e,i,d,o,s,p;
-		int inicio,tentativas,op;
-		char test1;
-	    
-		tentativas = 0;
-		c = '_';
-		a = '_';
-		l = '_';
-		e = '_';
-		i = '_';
-		d = '_';
-		o = '_';
-		s = '_';
-		c = '_';
-		o = '_';
-		p = '_';
-		i = '_';
-		o = '_';
-		
-		printf("...................Jogo da Forca...................\nAcerte a palavra advinhando 1 letra por vez\nLimite de tentativas:10\n");
-		
-		void jogo(int op) {
-			printf("A palavra e : %c %c %c %c %c %c %c %c %c %c %c %c %c \n", c,a,l,e,i,d,o,s,c,o,p,i,o);
-			printf("Adivinhe uma letra: ");
-			scanf(" %c", &test1);
-			if (test1 == 'c'){
-				c = test1;
-				if (c == 'c' && a == 'a' && l == 'l' && e == 'e' && i =='i' && d == 'd' && o == 'o' && s == 's' && p == 'p'){
-					printf("--------------------------------\nParabens, acertou!!\nPalavra: caleidoscopio\nTotal de erros: %d", tentativas);
-					exit(0);
-				}else 
-				 jogo (op);	
-			}else if(test1 == 'a'){
-				a = test1;
-				if (c == 'c' && a == 'a' && l == 'l' && e == 'e' && i =='i' && d == 'd' && o == 'o' && s == 's' && p == 'p'){
-					printf("--------------------------------\nParabens, acertou!!\nPalavra: caleidoscopio\nTotal de erros: %d", tentativas);
-					exit(0);
-				}else 
-				 jogo (op);	
-			}else if(test1 == 'l'){
-			l = test1;
-					if (c == 'c' && a == 'a' && l == 'l' && e == 'e' && i =='i' && d == 'd' && o == 'o' && s == 's' && p == 'p'){
-					printf("--------------------------------\nParabens, acertou!!\nPalavra: caleidoscopio\nTotal de erros: %d", tentativas);
-					exit(0);
-				}else 
-				 jogo (op);	
-			}else if(test1 == 'e'){
-				e = test1;
-				if (c == 'c' && a == 'a' && l == 'l' && e == 'e' && i =='i' && d == 'd' && o == 'o' && s == 's' && p == 'p'){
-					printf("--------------------------------\nParabens, acertou!!\nPalavra: caleidoscopio\nTotal de erros: %d", tentativas);
-					exit(0);
-				}else 
-				 jogo (op);
-			}else if(test1 == 'i'){
-				i = test1;
-				if (c == 'c' && a == 'a' && l == 'l' && e == 'e' && i =='i' && d == 'd' && o == 'o' && s == 's' && p == 'p'){
-					printf("--------------------------------\nParabens, acertou!!\nPalavra: caleidoscopio\nTotal de erros: %d", tentativas);
-					exit(0);
-				}else 
-					jogo (op);
-			}else if(test1 == 'd'){
-				d = test1;
-				if (c == 'c' && a == 'a' && l == 'l' && e == 'e' && i =='i' && d == 'd' && o == 'o' && s == 's' && p == 'p'){
-					printf("--------------------------------\nParabens, acertou!!\nPalavra: caleidoscopio\nTotal de erros: %d", tentativas);
-					exit(0);
-				}else 
-				 jogo (op);	
-			}else if(test1 == 'o'){
-				o = test1;
-				if (c == 'c' && a == 'a' && l == 'l' && e == 'e' && i =='i' && d == 'd' && o == 'o' && s == 's' && p == 'p'){
-					printf("--------------------------------\nParabens, acertou!!\nPalavra: caleidoscopio\nTotal de erros: %d", tentativas);
-					exit(0);
-				}else 
-				 jogo (op);	
-			}else if(test1 == 's'){
-				s = test1;
-				if (c == 'c' && a == 'a' && l == 'l' && e == 'e' && i =='i' && d == 'd' && o == 'o' && s == 's' && p == 'p'){
-					printf("--------------------------------\nParabens, acertou!!\nPalavra: caleidoscopio\nTotal de erros: %d", tentativas);
-					exit(0);
-				}else 
-				 jogo (op);	
-			}else if(test1 == 'p'){
-				p = test1;
-				if (c == 'c' && a == 'a' && l == 'l' && e == 'e' && i =='i' && d == 'd' && o == 'o' && s == 's' && p == 'p'){
-					printf("--------------------------------\nParabens, acertou!!\nPalavra: caleidoscopio\nTotal de erros: %d", tentativas);
-					exit(0);
-				}else 
-				 jogo (op);	
-			}else if (tentativas == 10 || tentativas >=10){
-				printf("Mais de 10 tentativas erradas!\n ...................FIM DE JOGO...................");
-				exit(0);
-			}else{
-				tentativas = tentativas + 1;
-				printf("Nao tem a letra, contagem de tentativas erradas: %d \n",tentativas);
-				jogo(op);
-			}
-		}
-			
-		jogo(op);
-	}
-
-	int carabinax;// carabina
-	void carabina (int carabinax){
-		
-		char c,a,r,b,i,n;
-		int inicio,test,tentativas,op;
-	    
-		tentativas = 0;
-		a = '_';
-		c = '_';
-		r = '_';
-		b = '_';
-		i = '_';
-		n = '_';
-			
-		printf("...................Jogo da Forca...................\nAcerte a palavra advinhando 1 letra por vez\nLimite de tentativas:10\n");
-		
-		void jogo(int op) {
-			printf("A palavra e : %c %c %c %c %c %c %c %c \n", c,a,r,a,b,i,n,a);
-			printf("Adivinhe uma letra: ");
-			scanf(" %c", &test);
-			if (test == 'a'){
-				a = test;
-				if (c == 'c' && a == 'a' && r == 'r' && b == 'b' && i =='i' && n =='n'){
-					printf("Parabens, acertou!! Total de erros: %d", tentativas);
-					exit(0);
-				}else 
-				 jogo (op);	
-			}else if(test == 'r'){
-				r = test;
-				if (c == 'c' && a == 'a' && r == 'r' && b == 'b' && i =='i' && n =='n'){
-					printf("Parabens, acertou!! Total de erros: %d", tentativas);
-					exit(0);
-				}else 
-				 jogo (op);	
-			}else if(test == 'b'){
-				b = test;
-				if (c == 'c' && a == 'a' && r == 'r' && b == 'b' && i =='i' && n =='n'){
-					printf("Parabens, acertou!! Total de erros: %d", tentativas);
-					exit(0);
-				}else 
-				 jogo (op);	
-			}else if(test == 'i'){
-				i = test;
-				if (c == 'c' && a == 'a' && r == 'r' && b == 'b' && i =='i' && n =='n'){
-					printf("Parabens, acertou!! Total de erros: %d", tentativas);
-					exit(0);
-				}else 
-				 jogo (op);
-			}else if(test == 'n'){
-				n = test;
-				if (c == 'c' && a == 'a' && r == 'r' && b == 'b' && i =='i' && n =='n'){
-					printf("Parabens, acertou!! Total de erros: %d", tentativas);
-					exit(0);
-				}else 
-					jogo (op);
-			}else if(test == 'c'){
-				c = test;
-				if (c == 'c' && a == 'a' && r == 'r' && b == 'b' && i =='i' && n =='n'){
-					printf("Parabens, acertou!! Total de erros: %d", tentativas);
-					exit(0);
-				}else 
-					jogo (op);
-			}else if (tentativas == 10 || tentativas >=10){
-				printf("Mais de 10 tentativas erradas!\n ...................FIM DE JOGO...................");
-				exit(0);
-			}else{
-				tentativas = tentativas + 1;
-				printf("Nao tem a letra, contagem de tentativas erradas: %d \n",tentativas);
-				jogo(op);
-			}
-		}
-			
-		jogo(op);
-	}
-
-	int laranjax;
-	void laranja(int laranjax){
-		
-		char a,r,n,j,l;
-		int inicio,tentativas,op;
-		char test1;
-	    
-		tentativas = 0;
-		l = '_';
-		a = '_';
-		r = '_';
-		a = '_';
-		n = '_';
-		j = '_';
-		a = '_';
-			
-		printf("...................Jogo da Forca...................\nAcerte a palavra advinhando 1 letra por vez\nLimite de tentativas:10\n");
-		
-		void jogo(int op) {
-			printf("A palavra e : %c %c %c %c %c %c %c \n", l,a,r,a,n,j,a);
-			printf("Adivinhe uma letra: ");
-			scanf(" %c", &test1);
-			if (test1 == 'l'){
-				l = test1;
-				if (l == 'l' && a == 'a' && r == 'r' && n == 'n' && j =='j'){
-					printf("Parabens, acertou!!\nPalavra: Laranja\nTotal de erros: %d", tentativas);
-					exit(0);
-				}else 
-				 jogo (op);	
-			}else if(test1 == 'a'){
-				a = test1;
-				if (l == 'l' && a == 'a' && r == 'r' && n == 'n' && j =='j'){
-					printf("Parabens, acertou!!\nPalavra: Laranja\nTotal de erros: %d", tentativas);
-					exit(0);
-				}else 
-				 jogo (op);	
-			}else if(test1 == 'r'){
-			r = test1;
-					if (l == 'l' && a == 'a' && r == 'r' && n == 'n' && j =='j'){
-					printf("Parabens, acertou!!\nPalavra: Laranja\nTotal de erros: %d", tentativas);
-					exit(0);
-				}else 
-				 jogo (op);	
-			}else if(test1 == 'n'){
-				n = test1;
-				if (l == 'l' && a == 'a' && r == 'r' && n == 'n' && j =='j'){
-					printf("Parabens, acertou!!\nPalavra: Laranja\nTotal de erros: %d", tentativas);
-					exit(0);
-				}else 
-				 jogo (op);
-			}else if(test1 == 'j'){
-				j = test1;
-				if (l == 'l' && a == 'a' && r == 'r' && n == 'n' && j =='j'){
-					printf("Parabens, acertou!!\nPalavra: Laranja\nTotal de erros: %d", tentativas);
-					exit(0);
-				}else 
-					jogo (op);
-			}else if (tentativas == 10 || tentativas >=10){
-				printf("Mais de 10 tentativas erradas!\n ...................FIM DE JOGO...................");
-				exit(0);
-			}else{
-				tentativas = tentativas + 1;
-				printf("Nao tem a letra, contagem de tentativas erradas: %d \n",tentativas);
-				jogo(op);
-			}
-		}
-			
-		jogo(op);
-	}
-
-int armadurax;
-	void armadura (int armadurax){
-		
-		char a,r,m,d,u;
-		int inicio,tentativas,op;
-		char test1;
-	    
-		tentativas = 0;
-		a = '_';
-		r = '_';
-		m = '_';
-		a = '_';
-		d = '_';
-		u = '_';
-		r = '_';
-		a = '_';
-			
-		printf("...................Jogo da Forca...................\nAcerte a palavra advinhando 1 letra por vez\nLimite de tentativas:10\n");
-		
-		void jogo(int op) {
-			printf("A palavra e : %c %c %c %c %c %c %c %c \n", a,r,m,a,d,u,r,a);
-			printf("Adivinhe uma letra: ");
-			scanf(" %c", &test1);
-			if (test1 == 'a'){
-				a = test1;
-				if (a == 'a' && r == 'r' && m == 'm' && d == 'd' && u =='u'){
-					printf("Parabens, acertou!!\nPalavra: Armadura\nTotal de erros: %d", tentativas);
-					exit(0);
-				}else 
-				 jogo (op);	
-			}else if(test1 == 'r'){
-				r = test1;
-				if (a == 'a' && r == 'r' && m == 'm' && d == 'd' && u =='u'){
-					printf("Parabens, acertou!!\nPalavra: Armadura\nTotal de erros: %d", tentativas);
-					exit(0);
-				}else 
-				 jogo (op);	
-			}else if(test1 == 'm'){
-			m = test1;
-					if (a == 'a' && r == 'r' && m == 'm' && d == 'd' && u =='u'){
-					printf("Parabens, acertou!!\nPalavra: Armadura\nTotal de erros: %d", tentativas);
-					exit(0);
-				}else 
-				 jogo (op);	
-			}else if(test1 == 'd'){
-				d = test1;
-				if (a == 'a' && r == 'r' && m == 'm' && d == 'd' && u =='u'){
-					printf("Parabens, acertou!!\nPalavra: Armadura\nTotal de erros: %d", tentativas);
-					exit(0);
-				}else 
-				 jogo (op);
-			}else if(test1 == 'u'){
-				u = test1;
-				if (a == 'a' && r == 'r' && m == 'm' && d == 'd' && u =='u'){
-					printf("Parabens, acertou!!\nPalavra: Armadura\nTotal de erros: %d", tentativas);
-					exit(0);
-				}else 
-					jogo (op);
-			}else if (tentativas == 10 || tentativas >=10){
-				printf("Mais de 10 tentativas erradas!\n ...................FIM DE JOGO...................");
-				exit(0);
-			}else{
-				tentativas = tentativas + 1;
-				printf("Nao tem a letra, contagem de tentativas erradas: %d \n",tentativas);
-				jogo(op);
-			}
-		}
-			
-		jogo(op);
-	}
-
-	int bananax;
-	void banana(int bananax){
-	
-		char a,b,n;
-		char test;
-		int tentativas, op;
-		
-		tentativas = 0;
-		a = '_';
-		b = '_';
-		n = '_';
-		
-		printf("...................Jogo da Forca...................\nAcerte a palavra advinhando 1 letra por vez\nLimite de tentativas:10\n");
-		
-		void jogo(int op) {
-			printf("A palavra e : %c %c %c %c %c %c \n", b,a,n,a,n,a);
-			printf("Adivinhe uma letra: ");
-			scanf(" %c", &test);
-			if (test == 'b'){
-				b = test;
-				if (b == 'b' && a == 'a' && n == 'n'){
-					printf("Parabens, acertou!!\nPalavra: Banana\nTotal de erros: %d", tentativas);
-					exit(0);
-				}else jogo(op);
-			}else if(test == 'a'){
-				a = test;
-				if (b == 'b' && a == 'a' && n == 'n'){
-					printf("Parabens, acertou!!\nPalavra: Banana\nTotal de erros: %d", tentativas);
-					exit(0);
-				}else jogo(op);
-			}else if(test == 'n'){
-				n = test;
-				if (b == 'b' && a == 'a' && n == 'n'){
-					printf("Parabens, acertou!!\nPalavra: Banana\nTotal de erros: %d", tentativas);
-					exit(0);
-				}else jogo(op);
-			}else if (tentativas == 10 || tentativas >= 10){
-				printf("Mais de 10 tentativas erradas!\n ...................FIM DE JOGO...................");
-				exit(0);
-			}else{
-				tentativas = tentativas + 1;
-				printf("Nao tem a letra, contagem de tentativas erradas: %d \n",tentativas);
-				jogo(op);
-			}
-		}
-		
-		jogo(op);
-	}
-	
 	int abacax;
 	void abacaxi(int abacax){
-	
-		char a,b,c,x,i,test;
-		int inicio,tentativas,op;
+		
+		char a,b,c,x,i;
+		char test;
+		int tentativas;
 		
 		tentativas = 0;
 		a = '_';
@@ -585,109 +17,302 @@ int armadurax;
 		
 		printf("...................Jogo da Forca...................\nAcerte a palavra advinhando 1 letra por vez\nLimite de tentativas:10\n");
 		
-		void jogo(int op) {
+		while (1) {
 			printf("A palavra e : %c %c %c %c %c %c %c \n", a,b,a,c,a,x,i);
 			printf("Adivinhe uma letra: ");
 			scanf(" %c", &test);
-			if (test == 'a'){
+			if(test == 'a'){
 				a = test;
-				if (a == 'a' && b == 'b' && c == 'c' && x == 'x' && i =='i'){
-					printf("Parabens, acertou!!\nPalavra: Abacaxi\nTotal de erros: %d", tentativas);
-					exit(0);
-				}else 
-				 jogo (op);	
 			}else if(test == 'b'){
 				b = test;
-				if (a == 'a' && b == 'b' && c == 'c' && x == 'x' && i =='i'){
-					printf("Parabens, acertou!!\nPalavra: Abacaxi\nTotal de erros: %d", tentativas);
-					exit(0);
-				}else 
-				 jogo (op);	
 			}else if(test == 'c'){
-			c = test;
-					if (a == 'a' && b == 'b' && c == 'c' && x == 'x' && i =='i'){
-					printf("Parabens, acertou!!\nPalavra: Abacaxi\nTotal de erros: %d", tentativas);
-					exit(0);
-				}else 
-				 jogo (op);	
+				c = test;
 			}else if(test == 'x'){
 				x = test;
-				if (a == 'a' && b == 'b' && c == 'c' && x == 'x' && i =='i'){
-					printf("Parabens, acertou!!\nPalavra: Abacaxi\nTotal de erros: %d", tentativas);
-					exit(0);
-				}else 
-				 jogo (op);
 			}else if(test == 'i'){
 				i = test;
-				if (a == 'a' && b == 'b' && c == 'c' && x == 'x' && i =='i'){
-					printf("Parabens, acertou!!\nPalavra: Abacaxi\nTotal de erros: %d", tentativas);
-					exit(0);
-				}else 
-					jogo (op);
-			}else if (tentativas == 10 || tentativas >=10){
-				printf("Mais de 10 tentativas erradas!\n ...................FIM DE JOGO...................");
-				exit(0);
 			}else{
 				tentativas = tentativas + 1;
 				printf("Nao tem a letra, contagem de tentativas erradas: %d \n",tentativas);
-				jogo(op);
-			}
 			}
 			
-		jogo(op);
-	
-		
+			if (a == 'a' && b == 'b' && c == 'c' && x == 'x' && i == 'i'){
+				printf("Parabens, acertou!!\nPalavra: Abacaxi\nTotal de erros: %d\n", tentativas);
+				break;
+			}
+			if (tentativas == 10){
+				printf("Voce chegou a 10 tentativas erradas!\n ...................FIM DE JOGO...................\n");
+				break;
+			}
 		}
-	
+	}
 
-int main() {
-	int niveis,forca,iniciar,inicio;
-	void tela_niveis(int niveis){
-		printf("Niveis: \n1.Facil\n2.Facil\n3.Facil\n4.Facil\n5.Médio\n6.Difícil\n7.Difícil\n8.Difícil\n");
-		scanf("%d",&forca);
-	
-		switch(forca){
-			case 1:
-				abacaxi(abacax);
+	int bananax;
+	void banana(int bananax){
+		
+		char b,a,n;
+		char test;
+		int tentativas;
+		
+		tentativas = 0;
+		b = '_';
+		a = '_';
+		n = '_';
+		
+		printf("...................Jogo da Forca...................\nAcerte a palavra advinhando 1 letra por vez\nLimite de tentativas:10\n");
+		
+		while (1) {
+			printf("A palavra e : %c %c %c %c %c %c \n", b,a,n,a,n,a);
+			printf("Adivinhe uma letra: ");
+			scanf(" %c", &test);
+			if(test == 'b'){
+				b = test;
+			}else if(test == 'a'){
+				a = test;
+			}else if(test == 'n'){
+				n = test;
+			}else{
+				tentativas = tentativas + 1;
+				printf("Nao tem a letra, contagem de tentativas erradas: %d \n",tentativas);
+			}
+			
+			if (b == 'b' && a == 'a' && n == 'n'){
+				printf("Parabens, acertou!!\nPalavra: Banana\nTotal de erros: %d\n", tentativas);
 				break;
-			case 2:
-				banana(bananax);
+			}
+			if (tentativas == 10){
+				printf("Voce chegou a 10 tentativas erradas!\n ...................FIM DE JOGO...................\n");
 				break;
-			case 3:
-				armadura(armadurax); 
-				break;
-			case 4:
-				laranja(laranjax);
-				break;
-			case 5:
-				carabina(carabinax);
-				break;
-			case 6:
-				caleidoscopio(caleidoscopiox);
-				break;
-			case 7:
-				computador(computadorx);
-				break;
-			case 8:
-				candelabro(candelabrox);
-				break;
-			default:
-				printf("Option Invalida, tente novamente\n");
-				tela_niveis(niveis);
-				break;
+			}
 		}
 	}
-	printf("...................Jogo da Forca...................\nAcerte a palavra advinhando 1 letra por vez\nLimite de tentativas:10\n");
-	printf("Iniciar jogo? \nselecione a alternativa: \n1.sim\n2.nao\n");
-	scanf("%d",&inicio);
-	if (inicio == 1){
-		tela_niveis(niveis);
-	}		
-	else{
-		printf("Beleza entao vacilao");
-		exit(0);
+
+	int armadurax;
+	void armadura(int armadurax){
+		
+		char a,r,m,d,u;
+		char test;
+		int tentativas;
+		
+		tentativas = 0;
+		a = '_';
+		r = '_';
+		m = '_';
+		d = '_';
+		u = '_';
+		
+		printf("...................Jogo da Forca...................\nAcerte a palavra advinhando 1 letra por vez\nLimite de tentativas:10\n");
+		
+		while (1) {
+			printf("A palavra e : %c %c %c %c %c %c %c %c \n", a,r,m,a,d,u,r,a);
+			printf("Adivinhe uma letra: ");
+			scanf(" %c", &test);
+			if(test == 'a'){
+				a = test;
+			}else if(test == 'r'){
+				r = test;
+			}else if(test == 'm'){
+				m = test;
+			}else if(test == 'd'){
+				d = test;
+			}else if(test == 'u'){
+				u = test;
+			}else{
+				tentativas = tentativas + 1;
+				printf("Nao tem a letra, contagem de tentativas erradas: %d \n",tentativas);
+			}
+			
+			if (a == 'a' && r == 'r' && m == 'm' && d == 'd' && u == 'u'){
+				printf("Parabens, acertou!!\nPalavra: Armadura\nTotal de erros: %d\n", tentativas);
+				break;
+			}
+			if (tentativas == 10){
+				printf("Voce chegou a 10 tentativas erradas!\n ...................FIM DE JOGO...................\n");
+				break;
+			}
+		}
 	}
-	
-	
-	return 0;
-}         
+
+	int laranjax;
+	void laranja(int laranjax){
+		
+		char l,a,r,n,j;
+		char test;
+		int tentativas;
+		
+		tentativas = 0;
+		l = '_';
+		a = '_';
+		r = '_';
+		n = '_';
+		j = '_';
+		
+		printf("...................Jogo da Forca...................\nAcerte a palavra advinhando 1 letra por vez\nLimite de tentativas:10\n");
+		
+		while (1) {
+			printf("A palavra e : %c %c %c %c %c %c %c \n", l,a,r,a,n,j,a);
+			printf("Adivinhe uma letra: ");
+			scanf(" %c", &test);
+			if(test == 'l'){
+				l = test;
+			}else if(test == 'a'){
+				a = test;
+			}else if(test == 'r'){
+				r = test;
+			}else if(test == 'n'){
+				n = test;
+			}else if(test == 'j'){
+				j = test;
+			}else{
+				tentativas = tentativas + 1;
+				printf("Nao tem a letra, contagem de tentativas erradas: %d \n",tentativas);
+			}
+			
+			if (l == 'l' && a == 'a' && r == 'r' && n == 'n' && j == 'j'){
+				printf("Parabens, acertou!!\nPalavra: Laranja\nTotal de erros: %d\n", tentativas);
+				break;
+			}
+			if (tentativas == 10){
+				printf("Voce chegou a 10 tentativas erradas!\n ...................FIM DE JOGO...................\n");
+				break;
+			}
+		}
+	}
+
+	int cavalox;
+	void cavalo(int cavalox){
+		
+		char c,a,v,l,o;
+		char test;
+		int tentativas;
+		
+		tentativas = 0;
+		c = '_';
+		a = '_';
+		v = '_';
+		l = '_';
+		o = '_';
+		
+		printf("...................Jogo da Forca...................\nAcerte a palavra advinhando 1 letra por vez\nLimite de tentativas:10\n");
+		
+		while (1) {
+			printf("A palavra e : %c %c %c %c %c %c \n", c,a,v,a,l,o);
+			printf("Adivinhe uma letra: ");
+			scanf(" %c", &test);
+			if(test == 'c'){
+				c = test;
+			}else if(test == 'a'){
+				a = test;
+			}else if(test == 'v'){
+				v = test;
+			}else if(test == 'l'){
+				l = test;
+			}else if(test == 'o'){
+				o = test;
+			}else{
+				tentativas = tentativas + 1;
+				printf("Nao tem a letra, contagem de tentativas erradas: %d \n",tentativas);
+			}
+			
+			if (c == 'c' && a == 'a' && v == 'v' && l == 'l' && o == 'o'){
+				printf("Parabens, acertou!!\nPalavra: Cavalo\nTotal de erros: %d\n", tentativas);
+				break;
+			}
+			if (tentativas == 10){
+				printf("Voce chegou a 10 tentativas erradas!\n ...................FIM DE JOGO...................\n");
+				break;
+			}
+		}
+	}
+
+	int janelax;
+	void janela(int janelax){
+		
+		char j,a,n,e,l;
+		char test;
+		int tentativas;
+		
+		tentativas = 0;
+		j = '_';
+		a = '_';
+		n = '_';
+		e = '_';
+		l = '_';
+		
+		printf("...................Jogo da Forca...................\nAcerte a palavra advinhando 1 letra por vez\nLimite de tentativas:10\n");
+		
+		while (1) {
+			printf("A palavra e : %c %c %c %c %c %c \n", j,a,n,e,l,a);
+			printf("Adivinhe uma letra: ");
+			scanf(" %c", &test);
+			if(test == 'j'){
+				j = test;
+			}else if(test == 'a'){
+				a = test;
+			}else if(test == 'n'){
+				n = test;
+			}else if(test == 'e'){
+				e = test;
+			}else if(test == 'l'){
+				l = test;
+			}else{
+				tentativas = tentativas + 1;
+				printf("Nao tem a letra, contagem de tentativas erradas: %d \n",tentativas);
+			}
+			
+			if (j == 'j' && a == 'a' && n == 'n' && e == 'e' && l == 'l'){
+				printf("Parabens, acertou!!\nPalavra: Janela\nTotal de erros: %d\n", tentativas);
+				break;
+			}
+			if (tentativas == 10){
+				printf("Voce chegou a 10 tentativas erradas!\n ...................FIM DE JOGO...................\n");
+				break;
+			}
+		}
+	}
+
+	int sapatox;
+	void sapato(int sapatox){
+		
+		char s,a,p,t,o;
+		char test;
+		int tentativas;
+		
+		tentativas = 0;
+		s = '_';
+		a = '_';
+		p = '_';
+		t = '_';
+		o = '_';
+		
+		printf("...................Jogo da Forca...................\nAcerte a palavra advinhando 1 letra por vez\nLimite de tentativas:10\n");
+		
+		while (1) {
+			printf("A palavra e : %c %c %c %c %c %c \n", s,a,p,a,t,o);
+			printf("Adivinhe uma letra: ");
+			scanf(" %c", &test);
+			if(test == 's'){
+				s = test;
+			}else if(test == 'a'){
+				a = test;
+			}else if(test == 'p'){
+				p = test;
+			}else if(test == 't'){
+				t = test;
+			}else if(test == 'o'){
+				o = test;
+			}else{
+				tentativas = tentativas + 1;
+				printf("Nao tem a letra, contagem de tentativas erradas: %d \n",tentativas);
+			}
+			
+			if (s == 's' && a == 'a' && p == 'p' && t == 't' && o == 'o'){
+				printf("Parabens, acertou!!\nPalavra: Sapato\nTotal de erros: %d\n", tentativas);
+				break;
+			}
+			if (tentativas == 10){
+				printf("Voce chegou a 10 tentativas erradas!\n ...................FIM DE JOGO...................\n");
+				break;
+			}
+		}
+	}
