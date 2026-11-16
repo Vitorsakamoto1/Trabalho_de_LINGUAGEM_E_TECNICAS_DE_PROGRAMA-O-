@@ -1060,7 +1060,8 @@ int caleidoscopiox;
 	}
 
 void limpar_entrada(){
-	fflush(stdin);
+	int c;
+	wile ((c = getchar()) != '\n' && c != EOF0);
 }
 
 int main() {
