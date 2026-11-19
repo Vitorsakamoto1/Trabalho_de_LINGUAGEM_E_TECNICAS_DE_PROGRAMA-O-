@@ -52,5 +52,5 @@ Abra o arquivo `.c` no Dev-C++, compile e execute com **F11**.
 - Anderson
 - Guilherme
 
-Arquivo dos Slides:
-[Como-funciona-o-nosso-jogo-da-forca.pdf.zip](https://github.com/user-attachments/files/35059339/Como-funciona-o-nosso-jogo-da-forca.pdf.zip)
+Link dos Slides:
+https://canva.link/1kfzcwfhvong8t1
