@@ -12,7 +12,7 @@ Jogo da forca feito em linguagem C.
    - 8 a 14: Médio
    - 15 a 21: Difícil
 3. Digite uma letra por vez para descobrir a palavra.
-4. Cada letra errada conta como uma tentativa e desenha uma parte do boneco na forca.
+4. Cada letra errada conta como uma tentativa.
 5. Com 10 erros, o jogo termina.
 6. No fim de cada partida, você pode jogar de novo.
 
