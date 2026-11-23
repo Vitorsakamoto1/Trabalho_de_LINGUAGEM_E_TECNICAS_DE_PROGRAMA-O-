@@ -32,8 +32,9 @@ Jogo da forca feito em linguagem C.
 
 - Entrada e saída com `printf` e `scanf`
 - Estruturas de seleção com `if/else` e `switch`
-- Laço de repetição com `while (1)` e `break`
-- Funções: uma para cada palavra, uma para desenhar a forca e uma para limpar a entrada
+- Laços de repetição com `while (1)`, `for` e `break`
+- Vetores de `char`: a palavra é guardada em um vetor, uma letra em cada posição, e outro vetor guarda as letras já descobertas
+- Funções: uma função `jogar` para todas as palavras, uma para desenhar a forca e uma para limpar a entrada
 
 ## Como executar
 
