@@ -7,7 +7,7 @@ void limpar_entrada() {
 }
 
 void jogar(char palavra[]) {
-    char descoberta[50];   
+    char descoberta[25];   
     int tamanho, i, achou, faltam;
     int tentativas = 0;
     char test;
@@ -138,3 +138,4 @@ int main() {
     printf("Fim, obrigado por jogar!\n");
     return 0;
 }
+
